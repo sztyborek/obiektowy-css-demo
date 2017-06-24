@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Pacifico');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+/*
+* Basic document settings 
+*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -49,23 +52,8 @@ img {
 }
 
 /*
-* Form controls
+* Buttons
 */
-input {
-  background-color: white;
-  border: 1px solid #ececec;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px #f3f3f3;
-  padding: .25em .5em;
-  font-size: 1em;
-  transition: box-shadow .3s ease-in-out;
-}
-
-input:focus {
-  outline: none;
-  box-shadow: 0 0 3px 3px #6EBBB2;
-}
-
 .btn {
   background-color: #6EBBB2;
   border: 0;
@@ -113,6 +101,10 @@ input:focus {
   border-radius: 50%;
 }
 
+
+/*
+* Navbar
+*/
 .navbar {
   background-color: #3B3B7E;
   font-size: 20px;
@@ -154,13 +146,13 @@ input:focus {
 */
 .notification {
   color: inherit;
-  font-size: 1em;
+  font-size: 16px;
   position: relative;
-  margin-right: 1.25em;
+  margin-right: 20px;
 }
 
 .notification__counter {
-  font-size: .75em;
+  font-size: .7em;
   font-weight: 700;
   text-shadow: 1px 1px 2px #656565;
   box-shadow: 0 0 5px #333;
@@ -189,8 +181,7 @@ input:focus {
 .search__result {
   display: inline-block;
   vertical-align: top;
-  float: left;
-  width: calc(100% / 3 - .5em);
+  width: calc(100% / 3 - .75em);
   margin: 0 .25em;
 }
 
@@ -299,15 +290,15 @@ input:focus {
 /*
 * Item info
 */
-.item-info__title {
+.card-info__title {
   margin: 0 0 .25em 0;
 }
 
-.item-info__link {
+.card-info__link {
   color: inherit;
 }
 
-.item-info__details {
+.card-info__details {
   list-style: none;
   padding: 0;
   font-size: .875em;
